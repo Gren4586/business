@@ -1,0 +1,259 @@
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3, p {
+    color: #708090;
+}
+
+img {
+    border-radius: 0.8rem;
+}
+
+h1, h2 {
+    font-family: 'Neuton', serif;
+}
+
+p {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* Header */
+header {
+    font-size: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.hero {
+    background-image: url("../images/bird-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    color: #708090;
+    text-shadow: 0 1px 0 #000;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 569px) {
+
+    .hero {
+        background-image: none;
+        background-color:rgba(245, 245, 245, 0.7);
+        height: 15.5rem;
+    }
+
+}
+
+/* Nav */
+
+.flex.nav {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav p {
+    display: inline;
+}
+
+nav p a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    padding: 0 3.5rem;
+    color: #708090;
+}
+
+.nav-item {
+    display: inline;
+}
+
+@media only screen and (max-width: 569px) {
+
+    nav p a {
+        letter-spacing: normal;
+        font-size: 1.65rem;
+    }
+
+}
+
+/* Mission */
+.mission.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mission-div {
+    background-color: rgba(245, 245, 245, 0.7);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 99%;
+}
+
+.mission h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 0 1px 0 #000;
+}
+
+/* Birds */
+.birds {
+    padding-top: 2.5rem;
+}
+
+.birds.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.birdcontainer {
+    display: inline-block;
+    max-width: 15rem;  /* Consider adjusting this value if needed */
+    text-shadow: 0 1px 0 #000;
+    font-size: 1.25rem;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+    align-self: stretch;
+    flex-basis: auto;  /* Changed from 50% to auto */
+}
+
+.birdwrapper {
+    /* Adjust or remove max-width as needed for responsiveness */
+    max-width: 100%;
+}
+
+.birdcontainer img {
+    max-width: 100%;
+}
+
+/* Adding media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .birdcontainer {
+        flex-basis: 100%;  /* Each item takes full width on smaller screens */
+        max-width: none;   /* Removes max-width restriction */
+        margin-top: 0.7rem;
+    }
+
+    .birdwrapper {
+        /* Ensure full width for smaller screens */
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .birdcontainer {
+        font-size: 1.05rem;  /* Adjust font size for smaller screens */
+    }
+}
+
+/* Team */
+.workers {
+    padding-top: 2.5rem;
+}
+
+.mobile-staff {
+    display: none;
+}
+
+.workers.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.staffcontainer {
+    display: inline-block;
+    max-width: 15rem;  /* Consider adjusting this value if needed */
+    text-shadow: 0 1px 0 #000;
+    font-size: 1.25rem;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+    align-self: stretch;
+    flex-basis: auto;  /* Changed from 50% to auto */
+}
+
+.staffwrapper {
+    /* Adjust or remove max-width as needed for responsiveness */
+    max-width: 100%;
+}
+
+.staffcontainer img {
+    max-width: 100%;
+}
+
+/* Adding media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .desktop-staff {
+        display: none;
+    }
+
+    .mobile-staff {
+        display: inline;
+    }
+
+    .staffcontainer {
+        flex-basis: 100%;  /* Each item takes full width on smaller screens */
+        max-width: none;   /* Removes max-width restriction */
+        margin-top: 0.7rem;
+    }
+
+    .staffwrapper {
+        /* Ensure full width for smaller screens */
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .staffcontainer {
+        font-size: 1.05rem;  /* Adjust font size for smaller screens */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: rgba(245, 245, 245, 0.7);
+    text-align: center;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    padding-top: 0.4rem;
+    padding-bottom: 0.25rem;
+    margin-top: 0.6rem;
+}
+
+footer h2, footer p {
+    text-shadow: 0 1px 0 #000;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    footer p {
+        font-size: 1.05rem;
+    }
+
+}
